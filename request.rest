@@ -1,0 +1,24 @@
+GET http://localhost:3000/post 
+Authorization: Beares eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSXNyYSIsImlhdCI6MTY1NTIzOTk5OX0.l4XpQ55sus1DnZqW0Q2ZgR47pqUhIHSF1sMFaqjURYA
+
+
+
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "Isra"
+}
+
+
+###
+POST http://localhost:3000/newTea
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSXNyYSIsImlhdCI6MTY1NTIzOTk5OX0.l4XpQ55sus1DnZqW0Q2ZgR47pqUhIHSF1sMFaqjURYA
+
+{
+    "username": "Fabio",
+    "newTea": "I like coffee"
+}
